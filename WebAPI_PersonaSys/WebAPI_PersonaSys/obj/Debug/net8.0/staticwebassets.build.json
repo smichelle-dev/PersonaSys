@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "y4iEXYuL8PNJUq3eqwxhOQeJR9DCmfcCjHbbDm4lr90=",
+  "Source": "WebAPI_PersonaSys",
+  "BasePath": "_content/WebAPI_PersonaSys",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
