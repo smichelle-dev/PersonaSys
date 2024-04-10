@@ -1,9 +1,11 @@
-﻿using WebAPI_PersonaSys.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using WebAPI_PersonaSys.Enums;
 
 namespace WebAPI_PersonaSys.Models
 {
     public class FuncionarioModel
     {
+        [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
         public  DepartamentoEnum Departamento { get; set; }
