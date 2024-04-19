@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+////////configuração banco/////
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

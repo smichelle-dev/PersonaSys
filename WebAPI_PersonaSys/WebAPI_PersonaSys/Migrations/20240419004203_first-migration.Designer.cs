@@ -12,7 +12,7 @@ using WebAPI_PersonaSys.DataContext;
 namespace WebAPI_PersonaSys.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240410162034_first-migration")]
+    [Migration("20240419004203_first-migration")]
     partial class firstmigration
     {
         /// <inheritdoc />

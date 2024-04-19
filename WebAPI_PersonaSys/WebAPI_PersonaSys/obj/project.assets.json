@@ -4524,7 +4524,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\P_920223\\.nuget\\packages\\": {}
+    "C:\\Users\\Michelle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4532,11 +4532,11 @@
       "projectUniqueName": "C:\\PersonaSys\\WebAPI_PersonaSys\\WebAPI_PersonaSys\\WebAPI_PersonaSys.csproj",
       "projectName": "WebAPI_PersonaSys",
       "projectPath": "C:\\PersonaSys\\WebAPI_PersonaSys\\WebAPI_PersonaSys\\WebAPI_PersonaSys.csproj",
-      "packagesPath": "C:\\Users\\P_920223\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
       "outputPath": "C:\\PersonaSys\\WebAPI_PersonaSys\\WebAPI_PersonaSys\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\P_920223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4611,7 +4611,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
