@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAPI_PersonaSys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6105d48f5bd5b86751eb34e1eb62261de21305f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdf4e401c014004cb7ef37a32e617c62aa5f288d")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAPI_PersonaSys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAPI_PersonaSys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

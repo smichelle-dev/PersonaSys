@@ -11,14 +11,43 @@ namespace WebAPI_PersonaSys.Service.FuncionarioService
         
         }
 
-        public Task<ServiceResponse<List<FuncionarioModel>>> CreateFuncionario(FuncionarioModel novoFuncionario)
+        public async Task<ServiceResponse<List<FuncionarioModel>>> CreateFuncionario(FuncionarioModel novoFuncionario)
         {
-            throw new NotImplementedException();
+            ServiceResponse<List<FuncionarioModel>> serviceResponse = new ServiceResponse<List<FuncionarioModel>>();
+
+            try
+            {
+                if (novoFuncionario == null)
+
+                {
+                    serviceResponse.Dados=null;
+                    serviceResponse.Mensagem="Informar Dados!";
+                    serviceResponse.Sucesso=false;
+
+                    return serviceResponse;
+                }
+
+
+                _context.Add(novoFuncionario);
+                await _context.SaveChangesAsync();
+                serviceResponse.Dados=_context.Funcionarios.ToList();
+
+
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Mensagem=ex.Message;
+                serviceResponse.Sucesso=false;
+
+            }
+            return serviceResponse;
         }
 
-        public Task<ServiceResponse<List<FuncionarioModel>>> CreateFuncionarioList(FuncionarioModel novoFuncionario)
+        public  Task<ServiceResponse<List<FuncionarioModel>>> CreateFuncionarioList(FuncionarioModel novoFuncionario)
         {
+
             throw new NotImplementedException();
+
         }
 
         public Task<ServiceResponse<List<FuncionarioModel>>> DeleteFuncionario(int id)
@@ -26,9 +55,31 @@ namespace WebAPI_PersonaSys.Service.FuncionarioService
             throw new NotImplementedException();
         }
 
-        public Task<ServiceResponse<FuncionarioModel>> GetFuncionarioById(int id)
+        public async Task<ServiceResponse<FuncionarioModel>> GetFuncionarioById(int id)
         {
-            throw new NotImplementedException();
+           ServiceResponse<FuncionarioModel> serviceResponse = new ServiceResponse<FuncionarioModel> ();
+
+            try
+            {
+                FuncionarioModel funcionario = _context.Funcionarios.FirstOrDefault(x => x.Id == id);
+                
+                if (funcionario == null) {
+
+                    serviceResponse.Dados= null;
+                    serviceResponse.Mensagem = "Usuário não encontrado na base de dados";
+                    serviceResponse.Sucesso=false;
+
+                }
+                serviceResponse.Dados=funcionario;
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Mensagem=ex.Message;
+                serviceResponse.Sucesso=false;
+            }
+            return serviceResponse;
+
+
         }
 
         public async Task<ServiceResponse<List<FuncionarioModel>>> GetFuncionarios()
